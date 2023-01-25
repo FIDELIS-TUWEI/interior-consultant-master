@@ -81,3 +81,82 @@ span3.setAttribute('class', 'bars');
 hamburgerDiv.appendChild(span3);
 
 // Main Container
+const container = document.createElement('main');
+container.setAttribute('class', 'container');
+document.body.append(container);
+
+// Text container
+const textdiv = document.createElement('div');
+textdiv.setAttribute('class', 'text__content');
+container.appendChild(textdiv);
+
+// Header text -h1
+const h1 = document.createElement('h1');
+h1.setAttribute('class', 'text__title')
+h1.innerHTML = `Modern Interior`;
+textdiv.appendChild(h1);
+
+// Text container paragraph
+const paragraph = document.createElement('p');
+paragraph.setAttribute('class', 'article');
+paragraph.innerHTML = `A full-service residential & commercial interior design and staging company
+offering professional organizing & eco-services.`
+textdiv.appendChild(paragraph);
+
+// Read more link
+const readMore = document.createElement('a');
+readMore.setAttribute('class', 'read__link');
+readMore.innerHTML = `Read more `;
+textdiv.appendChild(readMore);
+
+// Arrow icon
+const arrowIcon = document.createElement('i');
+arrowIcon.setAttribute('class', 'fa-solid fa-arrow-right');
+readMore.appendChild(arrowIcon);
+
+// Image div
+const imageDiv = document.createElement('div');
+imageDiv.setAttribute('class', 'image__div');
+container.appendChild(imageDiv);
+
+// Image
+const image = document.createElement('img');
+image.setAttribute('class', 'image');
+image.setAttribute('src', 'photo1.png');
+imageDiv.appendChild(image);
+
+
+// Author outer div
+const outerContainer = document.createElement('div');
+outerContainer.setAttribute('class', 'outer__container');
+imageDiv.appendChild(outerContainer);
+
+// Author inner Profile div
+const innerDiv = document.createElement('div');
+innerDiv.setAttribute('class', 'inner__container');
+outerContainer.appendChild(innerDiv);
+
+//Author profile div
+const authorDiv = document.createElement('div');
+authorDiv.setAttribute('class', 'author');
+innerDiv.appendChild(authorDiv);
+
+// Author profile Image
+const authorImage = document.createElement('img');
+authorImage.setAttribute('src', 'photo2.png');
+authorDiv.appendChild(authorImage);
+
+// Author Name
+const authorName = document.createElement('h4');
+authorName.innerHTML = `Aliza Webber`;
+authorDiv.appendChild(authorName);
+
+// Author Title
+const authorTitle = document.createElement('h6');
+authorTitle.innerHTML = `Interior designer`;
+authorDiv.appendChild(authorTitle);
+
+// Design data
+const designData = document.createElement('h3');
+designData.innerHTML = `Designed in 2020 by Aliza Webber`;
+innerDiv.appendChild(designData);

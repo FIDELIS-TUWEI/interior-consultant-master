@@ -40,6 +40,10 @@ a {
     letter-spacing: 0.5px;
 }
 
+img {
+    max-width: 100%;
+}
+
 .nav__bar {
     min-height: 70px;
     display: flex;
