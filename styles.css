@@ -61,7 +61,7 @@ img {
 }
 
 .nav__brand {
-    border: 1px solid white;
+    border: 1px solid var(--primary-text-color);
     font-size: 1rem;
 }
 
@@ -81,8 +81,33 @@ img {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background: #ffffff;
+    background: var(--primary-text-color);
 }
+
+/* Main container */
+/* .container {
+    border: 4px dotted hotpink;
+}
+
+.text__content {
+    border: 2px solid blue;
+}
+
+.image__div {
+    border: 3px solid yellow;
+}
+
+.outer__container {
+    border: 3px solid red;
+}
+
+.inner__container {
+    border: 3px dashed wheat;
+}
+
+.author {
+    border: 3px solid violet;
+} */
 
 @media screen and (max-width: 630px) {
     .hamburger__menu {
@@ -104,6 +129,7 @@ img {
         gap: 0;
         flex-direction: column;
         width: 50%;
+        height: 70%;
         text-align: center;
         transition: 0.3s;
     }
@@ -113,5 +139,61 @@ img {
     .nav__menu.active {
         right: 0;
         background: var(--primary-bg-color);
+        z-index: 3;
+    }
+    .container {
+        border: 4px dotted hotpink;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+        z-index: 1;
+    }    
+    .text__content {
+        border: 2px solid blue;
+        line-height: 1.2;
+        letter-spacing: 0.5;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }  
+    .image__div img {
+        border: 3px solid yellow;
+        position: relative;
+        z-index: 1;
+    }  
+    .outer__container {
+        border: 3px solid red;
+        background-color: #181719;
+        position: absolute;
+        width: 80%;
+        height: 20%;
+        bottom: 10px;
+        z-index: 2;
+    }   
+    .inner__container {
+        border: 3px dashed wheat;
+        height: 100%;
+    }   
+    .author {
+        border: 3px solid violet;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .username {
+        border: 2px solid purple;
+        
+    }
+    .author img {
+        border: 1px solid white;
+        border-radius: 50%;
+        width: 20%;
+        
     }
 }

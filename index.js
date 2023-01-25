@@ -129,7 +129,7 @@ imageDiv.appendChild(image);
 // Author outer div
 const outerContainer = document.createElement('div');
 outerContainer.setAttribute('class', 'outer__container');
-imageDiv.appendChild(outerContainer);
+container.appendChild(outerContainer);
 
 // Author inner Profile div
 const innerDiv = document.createElement('div');
@@ -147,14 +147,18 @@ authorImage.setAttribute('src', 'photo2.png');
 authorDiv.appendChild(authorImage);
 
 // Author Name
+const usernameDiv = document.createElement('div');
+usernameDiv.setAttribute('class', 'username');
+authorDiv.appendChild(usernameDiv)
+
 const authorName = document.createElement('h4');
 authorName.innerHTML = `Aliza Webber`;
-authorDiv.appendChild(authorName);
+usernameDiv.appendChild(authorName);
 
 // Author Title
 const authorTitle = document.createElement('h6');
 authorTitle.innerHTML = `Interior designer`;
-authorDiv.appendChild(authorTitle);
+usernameDiv.appendChild(authorTitle);
 
 // Design data
 const designData = document.createElement('h3');
