@@ -152,15 +152,18 @@ usernameDiv.setAttribute('class', 'username');
 authorDiv.appendChild(usernameDiv)
 
 const authorName = document.createElement('h4');
+authorName.setAttribute('id', 'name')
 authorName.innerHTML = `Aliza Webber`;
 usernameDiv.appendChild(authorName);
 
 // Author Title
 const authorTitle = document.createElement('h6');
+authorTitle.setAttribute('id', 'title');
 authorTitle.innerHTML = `Interior designer`;
 usernameDiv.appendChild(authorTitle);
 
 // Design data
 const designData = document.createElement('h3');
+designData.setAttribute('id', 'designer');
 designData.innerHTML = `Designed in 2020 by Aliza Webber`;
 innerDiv.appendChild(designData);

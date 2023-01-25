@@ -148,7 +148,7 @@ img {
         justify-content: center;
         align-items: center;
         position: relative;
-        height: 100vh;
+        height: 100%;
         z-index: 1;
     }    
     .text__content {
@@ -170,30 +170,44 @@ img {
     .outer__container {
         border: 3px solid red;
         background-color: #181719;
+        padding: 10px 0 10px 10px;
         position: absolute;
+        max-width: 100%;
+        height: 100px;
         width: 80%;
-        height: 20%;
-        bottom: 10px;
+        bottom: -60px;
         z-index: 2;
-    }   
-    .inner__container {
-        border: 3px dashed wheat;
-        height: 100%;
-    }   
+    }      
     .author {
-        border: 3px solid violet;
         display: flex;
-        justify-content: space-between;
         flex-direction: row;
+        gap: 10px;
     }
     .username {
-        border: 2px solid purple;
-        
+        margin-top: 20px;
     }
     .author img {
-        border: 1px solid white;
         border-radius: 50%;
         width: 20%;
-        
+    }
+    #name {
+        font-family: var(--secondary-font);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+    }
+    #title {
+        color: #828282;
+        font-family: var(--secondary-font);
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12px;
+    }
+    #designer {
+        margin-top: 10px;
+        font-family: var(--primary-font);
+        font-weight: 700;
+        font-size: var(--fs-nav-links);
+        line-height: 23px;
     }
 }
