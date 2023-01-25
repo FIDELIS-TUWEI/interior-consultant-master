@@ -29,6 +29,7 @@ html {
 body {
     background: var(--primary-bg-color);
     font-family: var(--primary-font);
+    max-width: 1440px;
     color: var(--primary-text-color);
     padding: 0 40px;
 }
@@ -88,7 +89,7 @@ img {
 }
 
 /* Main container */
-.container {
+/* .container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -178,9 +179,9 @@ img {
     font-weight: 700;
     font-size: var(--fs-primary-paragraph);
     line-height: 31px;
-}
+} */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 630px) {
     .hamburger__menu {
         display: block;
     } 
