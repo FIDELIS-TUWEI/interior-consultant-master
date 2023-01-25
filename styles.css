@@ -142,7 +142,6 @@ img {
         z-index: 3;
     }
     .container {
-        border: 4px dotted hotpink;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -152,7 +151,6 @@ img {
         z-index: 1;
     }    
     .text__content {
-        border: 2px solid blue;
         line-height: 1.2;
         letter-spacing: 0.5;
         padding: 20px 0;
@@ -163,12 +161,10 @@ img {
         gap: 20px;
     }  
     .image__div img {
-        border: 3px solid yellow;
         position: relative;
         z-index: 1;
     }  
     .outer__container {
-        border: 3px solid red;
         background-color: #181719;
         padding: 8px 0 10px 8px;
         position: absolute;
